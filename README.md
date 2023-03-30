@@ -5,14 +5,14 @@
 </br>
 
 》Technologies utilisées
-> - Arduino
-> - Jeedom
+- Arduino
+- Jeedom
 </br>
 
 》Matériels utilisés
 </br>
 
 》Développeurs
-> - [kennethPad](https://github.com/kennethPad) (Kenneth)
-> - [Futogi](https://github.com/Futogi) (Dorian)
-> - [KushiieDev](https://github.com/KushiieDev) (Maël)
+- [kennethPad](https://github.com/kennethPad) (Kenneth)
+- [Futogi](https://github.com/Futogi) (Dorian)
+- [KushiieDev](https://github.com/KushiieDev) (Maël)
