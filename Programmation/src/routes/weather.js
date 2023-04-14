@@ -1,6 +1,18 @@
 import { Router } from 'express';
 const router = Router();
 
+/**
+ * @swagger
+ * /weather/rain:
+ *   get:
+ *     summary: Renvoie les prévisions météorologique de la pluie sur les 3 prochains jours
+ *     description: Récupère les prévisions météorologique des 3 prochains jours en fonction de la pluie
+ *     responses:
+ *       200:
+ *         description: Prévisions météorologique des 3 prochains jours récupérée avec succès
+ *       403:
+ *         description: Erreur lors de la requête API à OpenWeatherMap
+*/
 router.get('/rain', (_, res) => {
 
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Valbonne&appid=${process.env.weatherAPIKey}`)
@@ -27,6 +39,18 @@ router.get('/rain', (_, res) => {
         .catch((err) => res.json({ status: 403, error: err }));
 });
 
+/**
+ * @swagger
+ * /weather/freeze:
+ *   get:
+ *     summary: Renvoie les prévisions en fonction de la température si elle descends à 0
+ *     description: Récupère les prévisions de la température pour voir si elle descends à 0 ou en dessous
+ *     responses:
+ *       200:
+ *         description: Prévisions de la température récupérée avec succès
+ *       403:
+ *         description: Erreur lors de la requête API à OpenWeatherMap
+*/
 router.get('/freeze', (_, res) => {
 
     fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Valbonne&appid=${process.env.weatherAPIKey}`)
