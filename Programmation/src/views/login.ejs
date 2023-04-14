@@ -1,0 +1,32 @@
+<html lang="fr">
+
+<%- include('./partials/head', { title: "Water Project - Connexion" }) %>
+
+<body>
+
+    <div>
+        <form method="POST" action="/auth/login">
+            
+            <h1>Connexion</h1>
+            
+            <div>
+                <label>Nom d'utilisateur :</label>
+                <input type="text" name="username" maxlength="20" required>
+            </div>
+            
+            <% if(errors.includes("badUsername")) { %><label><strong>Le nom d'utilisateur renseigné est incorrect !</strong></label><br><%}%>
+        
+            <div>
+                <label>Mot de passe :</label>
+                <input type="password" name="password" maxlength="35" required> 
+            </div>
+            
+            <% if(errors.includes("badPassword")) { %><label><strong>Le mot de passe renseigné est incorrect !</strong></label><br><%}%>
+
+            <div><button type="submit">Enregistrer</button></div>
+        </form>
+    </div>
+
+</body>
+
+</html>
