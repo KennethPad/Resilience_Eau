@@ -1,0 +1,58 @@
+@import "views/home.css";
+@import "views/endpoints.css";
+
+@import "media.css";
+
+:root {
+    --blueHover: #117DBD;
+    --lightBlue: #95D1F5;
+    --darkBlue: #1A182D;
+    --darkCyan: #40E0D0;
+    --darkRed: #B22222;
+    --yellow: #F9BB12;
+    --astro: #2A233E;
+    --green: #00A19A;
+    --grey: #EBEBEC;
+    --cyan: #00FFFF;
+    --blue: #24A1EB;
+    --red: #DC143C;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+body {
+    background-color: whitesmoke;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.shadowBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
