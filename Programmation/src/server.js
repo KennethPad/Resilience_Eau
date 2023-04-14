@@ -15,9 +15,9 @@ app.use(express.json());
 // Route
 import apiRoute from './routes/api.js';
 
-app.get('/', (_, res) => res.redirect('/api'));
 app.use('/api', apiRoute);
 
+app.get('/', (_, res) => res.redirect('/api'));
 app.get('*', (_, res) => res.status(404).render('errors/404'));
 
 const port = process.env.port || 3000;
