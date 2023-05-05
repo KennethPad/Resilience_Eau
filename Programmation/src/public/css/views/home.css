@@ -1,20 +1,13 @@
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-weight: 600;
+.home-container {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 90rem;
+    margin: 15rem;
     text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: #e22d4b;
-    color: #ffffff;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: #d0183a;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--darkBlue);
 }
