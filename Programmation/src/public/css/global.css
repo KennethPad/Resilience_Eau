@@ -1,5 +1,15 @@
+@import "views/admin/register.css";
+
+@import "views/dashboard/home.css";
+
+@import "views/errors/404.css";
+@import "views/errors/occurred.css";
+
+@import "views/partials/navbar.css";
+@import "views/partials/sidebar.css";
+
 @import "views/home.css";
-@import "views/endpoints.css";
+@import "views/login.css";
 
 @import "media.css";
 
@@ -26,33 +36,5 @@
 }
 
 body {
-    background-color: whitesmoke;
-    background-attachment: fixed;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 1.5rem 0;
-}
-
-.shadowBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    justify-content: center;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    background-color: #005b96;
 }
