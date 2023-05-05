@@ -4,7 +4,22 @@
 
 <body>
 
-    <h1><%= connectedUser.username %></h1>
+    <div class="dashboard-home">
+            <%- include('../partials/sidebar') %>
+
+            <div class="dashboard-main">
+                <div class="dashboard-top">
+                    <h1 class="dashboard-title">Accueil</h1>
+                    <div class="connectedUser">
+                        <i class="fa fa-user"></i>
+                        <span>Utilisateur : <%= connectedUser.username %></span>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+
+                </div>
+            </div>
+    </div>
 
 </body>
 

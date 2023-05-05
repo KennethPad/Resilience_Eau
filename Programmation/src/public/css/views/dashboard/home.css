@@ -1,0 +1,26 @@
+.dashboard-home {
+    height: 100%;
+    display: flex;
+}
+
+.dashboard-main {
+    background-color: #413552;
+    width: 100%;
+    overflow: auto;
+}
+
+.dashboard-top {
+    background-color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    display: flex;
+}
+
+.dashboard-title, .connectedUser {
+    margin: 10px;
+}
+
+.connectedUser {
+    font-size: 22px;
+}
