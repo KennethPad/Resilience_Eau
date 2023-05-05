@@ -1,11 +1,8 @@
 import users from '../database/users.json' assert { type: 'json' };
 import { Router } from "express";
 import bcrypt from 'bcrypt';
-import fs from 'fs';
 
 const router = Router();
-
-router.get('/', (_, res) => res.render('auth/home'));
 
 router.get('/login', (_, res) => res.render('login', { errors: [] }));
 
