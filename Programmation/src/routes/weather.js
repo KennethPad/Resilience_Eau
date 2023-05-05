@@ -15,7 +15,7 @@ const router = Router();
 */
 router.get('/rain', (_, res) => {
 
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Valbonne&appid=${process.env.weatherAPIKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Valbonne&appid=${process.env.WEATHER_API_KEY}`)
         .then(res => res.json())
         .then(data => {
 
@@ -53,7 +53,7 @@ router.get('/rain', (_, res) => {
 */
 router.get('/temperatures', (_, res) => {
 
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Valbonne&appid=${process.env.weatherAPIKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Valbonne&appid=${process.env.WEATHER_API_KEY}`)
         .then(res => res.json())
         .then(data => {
 
