@@ -1,4 +1,5 @@
 import users from '../database/users.json' assert { type: 'json' };
+import { checkAuth } from '../utils.js';
 import { Router } from "express";
 import bcrypt from 'bcrypt';
 import fs from 'fs';
@@ -7,7 +8,7 @@ const router = Router();
 
 router.get('/', (_, res) => res.render('admin/home'));
 
-router.get('/register', (req, res) => res.render('admin/register', { connectedUser: users.find((user) => user.username === req.session.username), errors: [] }));
+router.get('/register', checkAuth, (req, res) => res.render('admin/register', { connectedUser: users.find((user) => user.username === req.session.username), errors: [] }));
 
 router.post('/register', async (req, res, next) => {
 
