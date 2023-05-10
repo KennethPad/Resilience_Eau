@@ -16,6 +16,7 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "influx": "^5.9.3",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^4.6.2"
   }
