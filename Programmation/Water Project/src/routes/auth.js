@@ -27,9 +27,7 @@ router.post('/login', (req, res) => {
 
 router.get('/logout', (req, res) => {
 
-    if(!req.session.username) return res.redirect('/');
-
-    req.session.destroy();
+    if(req.session.username) req.session.destroy();
 
     return res.redirect('/');
 });
