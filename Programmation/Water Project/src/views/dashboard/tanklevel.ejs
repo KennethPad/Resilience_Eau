@@ -1,0 +1,24 @@
+<html lang="fr">
+
+<%- include('../partials/head', { title: "Water Project - Cuve" }) %>
+
+<body>
+    <div class="dashboard">
+        <%- include('../partials/sidebar') %>
+
+            <div class="dashboard-main">
+                <div class="dashboard-top">
+                    <h1 class="dashboard-title">Niveau d'eau dans la cuve</h1>
+                    <div class="connectedUser">
+                        <i class="fa fa-user"></i>
+                        <span>Utilisateur : <%= connectedUser.username %></span>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <iframe class="tanklevel" src="http://192.168.143.73:1880/ui/#!/0?socketid=xDIJwP6qMN1_Wr0zAAAB" frameborder="0"></iframe>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
