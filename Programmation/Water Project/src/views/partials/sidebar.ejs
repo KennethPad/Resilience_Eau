@@ -6,10 +6,24 @@
         </div>
         <ul class="side-nav">
             <span class="side-nav__header">Menu</span>
-            <li class="side-nav__item side-nav__item-active">
-                <i class="fa fa-home"></i>
-                <span>Tableau de bord</span>
-            </li>
+            <a href="/dashboard/home">
+                <li class="side-nav__item">
+                    <i class="fa fa-line-chart"></i>
+                    <span>Tableau de bord</span>
+                </li>
+            </a>
+            <a href="/dashboard/schedule">
+                <li class="side-nav__item">
+                    <i class="fa fa-clock-o"></i>
+                    <span>Programmation arrosage</span>
+                </li>
+            </a>
+            <a href="/dashboard/tanklevel">
+                <li class="side-nav__item">
+                    <i class="fa fa-level-up"></i>
+                    <span>Niveau cuve d'eau</span>
+                </li>
+            </a>
         </ul>
     </div>          
     
@@ -28,5 +42,3 @@
         </a>
     </ul>            
 </nav>
-
-<script src="/js/active-item.js"></script>

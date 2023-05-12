@@ -1,18 +1,19 @@
-.dashboard-home {
+.dashboard {
     height: 100%;
     display: flex;
 }
 
 .dashboard-main {
-    background-color: #413552;
+    background-color: white;
     width: 100%;
     overflow: auto;
 }
 
 .dashboard-top {
-    background-color: whitesmoke;
+    background-color: #413552;
     justify-content: space-between;
     align-items: center;
+    color: whitesmoke;
     height: 5rem;
     display: flex;
 }

@@ -3,24 +3,73 @@
 <%- include('../partials/head', { title: "Water Project - Dashboard" }) %>
 
 <body>
-
-    <div class="dashboard-home">
-            <%- include('../partials/sidebar') %>
+    <div class="dashboard">
+        <%- include('../partials/sidebar') %>
 
             <div class="dashboard-main">
                 <div class="dashboard-top">
-                    <h1 class="dashboard-title">Accueil</h1>
+                    <h1 class="dashboard-title">Tableau de bord</h1>
                     <div class="connectedUser">
                         <i class="fa fa-user"></i>
                         <span>Utilisateur : <%= connectedUser.username %></span>
                     </div>
                 </div>
                 <div class="dashboard-content">
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                    <canvas id="myChart"></canvas>
+
+                    <script>
+
+                        const dataChart = JSON.parse('<%- JSON.stringify(dataChart) %>');
+                        const myChart = new Chart(document.getElementById('myChart'), {
+                            type: 'line',
+                            data: {
+                                labels: dataChart.map((data) => data.date),
+                                datasets: [
+                                    {
+                                        label: "Température",
+                                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                                        borderColor: 'rgba(255, 99, 132, 1)',
+                                        borderWidth: 3,
+                                        data: dataChart.map((data) => data.temperature)
+                                    },
+                                    {
+                                        label: "Niveau d'eau",
+                                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                                        borderColor: 'rgba(54, 162, 235, 1)',
+                                        borderWidth: 3,
+                                        data: dataChart.map((data) => data.waterLevel)
+                                    },
+                                    {
+                                        label: "Qualité de l'eau",
+                                        backgroundColor: 'rgba(255, 206, 86, 0.2)',
+                                        borderColor: 'rgba(255, 206, 86, 1)',
+                                        borderWidth: 3,
+                                        data: dataChart.map((data) => data.waterQuality)
+                                    }
+                                ]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+
+                        dataChart.forEach((data) => {
+                            // myChart.config.data.datasets[0].push(data.temperature);
+                            // myChart.config.data.datasets[1].push(data.waterLevel);
+                            // myChart.config.data.datasets[2].push(data.waterQuality);
+                        });
+                    </script>
 
                 </div>
             </div>
     </div>
-
 </body>
 
 </html>

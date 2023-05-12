@@ -1,6 +1,8 @@
 @import "views/admin/register.css";
 
 @import "views/dashboard/home.css";
+@import "views/dashboard/schedule.css";
+@import "views/dashboard/tanklevel.css";
 
 @import "views/errors/404.css";
 @import "views/errors/occurred.css";
