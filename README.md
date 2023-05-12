@@ -28,7 +28,9 @@ Règle principale stockage des eaux :
 - Influxdb 1.18
 - Docker
 - Node.JS
+
 </br>
+<br/>
 
 ### Installation 
 
@@ -59,6 +61,9 @@ sudo ./menu.sh
 - Dans ce menu naviguez avec les flèches haut et bas puis espace pour sélectionner. Enter construira le fichier docker-compose.yml. Assurez-vous de sélectionner les composants suivants : 
 influxdb, mosquitto, Node-Red, Grafana _(non necessaire)_ .
 - Vous pouvez ensuite démarrer tous ces conteneurs avec la commande "Start Stack" 
+
+<br/>
+<br/>
 
 
 #### Création de la base de donnée influxdb(version 1.18)
@@ -97,6 +102,9 @@ Présentation d'un select * :
 }
 ```
 
+<br/>
+<br/>
+
 #### Nginx
 > Nginx (prononcé "Engine-X") est un serveur web open source, léger et performant. Il est principalement utilisé pour servir des pages web statiques ou dynamiques et pour effectuer des opérations de proxy inverse, de mise en cache et de répartition de charge sur des sites web à forte demande.
 <br>
@@ -126,6 +134,8 @@ upstream influx {
         }
 ```
 
+<br/>
+<br/>
 
 
 #### Node.JS
@@ -166,7 +176,8 @@ Identifiant : Test
 Mot de passe : test  
 
 
-
+<br/>
+<br/>
 
 
 #### Explication des équipements et de la technologies
