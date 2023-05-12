@@ -129,18 +129,46 @@ upstream influx {
 
 
 #### Node.JS
-> Def de Node.JS
+> Node.js est un environnement d'exécution open-source, construit sur le moteur JavaScript V8 de Google. Il permet aux développeurs d'exécuter du code JavaScript côté serveur, plutôt que simplement côté client dans un navigateur web.
 <br>
 
-##### Pré-requis :  
-s'assurer que votre raspberry Pi 3/4 est mis à jours.
-```
-sudo apt update
-sudo apt upgrade
-```
+- Installer Node.JS  cliquer sur ce [lien](https://nodejs.org/en/download)
 
 
 
+#### Explication des équipements et de la technologies
+>Afin de mener à bien le projet de la résilience de l'eau, nous nous sommes renseigner sur les différentes manières de stocker l'eau, qui sont les suivantes : 
+- barrages
+- réservoirs
+- cuves
+-  puits
+
+En examinant ces diverses approches, nous avons opter pour l'approche de la cuve, plus précisement de la cuve souterraine, car cela ne réduits pas l'espace du campus de plus elle permet de mieux conserver l'état de l'eau, du fait qu'elle n'est pas exposé au soleil.  
+
+##### Matériels
+- Concernant les capteurs, nous avons eu besoin de deux capteurs, 1 capteur de niveau d'eau _(mesurant la quantité d'eau dans la cuve)_, 1et 1 capteur de qualité d'eau _(mesurant la salinité de l'eau)_.  
+- Pour les actionneurs, nous avons opter pour des vannes qui permettent de bloquer et activer des cours d'eau donc permettra de gérer le flux de l'eau.  
+- Nous avons aussi besoin d'un système intelligent nous permettant de traitter les données reçus et de donnée des directions.  
+- Et enfin Nous avons besoin d'une interface graphique afin que des utilisateurs, tels qu'un administrateur du campus ou un jardinier puisse manipuler facilement l'eau de la cuve sans être informaticien.   
+
+###### Capteurs/Actionneurs  
+Afin de communiquer facilement avec le système intilligent, nous avons fais le choix d'utiliser un broker MQTT étudier en classe et facile d'implémentation, de plus des données peuvent être envoyé par les capteurs de façon continu sans avoir le besoin de faire des requete http.  
+Les actionneurs devraient eux s'abonner à un topic du broker afin de recevoir des ordres du système intelligent.  
+
+###### Système intelligent  
+Afin de gérer les transactions et stocker les données, nous avons opter pour l'utilisation de Node-Red qui peut simuler une sorte de système intelligent grâce à des noeuds fonctions.  
+La récupérations des donnéées de capteurs se fait via des topics, ensuite le système intègre des fonctions permettant de traiter et gérer les informations reçus afin de les stocker dans une base de donnée , et de les traiter via une intelligence artificiel (algorithme) afin de donner des ordres aux actionneurs via un topic.  
+Le choix de la base de donnée a été faite en fonction de la manière à pouvoir stocker des donnée périodiquement et facilement.  
+
+>Précision  
+>Afin de rendre notre système plus précis, nous avons fait appel à un service api, nous permettant d'avoir accès au prévisions méteo, et alors être capable d'ordonnancer de manière plus efficace la gestion du flux de l'eau autours du campus.  
+
+###### Configuration  
+Pour permettre l'accès à notre raspberry Pi depuis l'exterieur, nous avons choisis la solution Nginx étudier en classe et très répandu.  
+
+###### Affichage  
+Le tableau de bord est réalisé grâce à toutes les données stocker en continu dans la base de donnée. A l'aide de Node.JS et précisement chart.JS, nous avons obtenu un affichage dynamique et en temps réel.  
+Via le javascript, html et css, nous avons eu la possibilité de mettre en place une page "programmer heure" permettant au jardinier de programmer les heures d'arrosage, pour que l'action se réalise automatiqument.  
 
 
 
