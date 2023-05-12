@@ -6,7 +6,7 @@
     margin: 15rem;
 }
 
-form {
+.login-container form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,12 +17,12 @@ form {
     border-radius: 5px;
 }
 
-h1 {
+.login-container h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
-label {
+.login-container label {
     display: block;
     margin-bottom: 10px;
 }
