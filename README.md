@@ -151,7 +151,8 @@ sudo apt upgrade
 [Les enjeux liés à l'eau : AFD](https://www.afd.fr/fr/actualites/dossier-eau-un-enjeu-mondial#:~:text=L'eau%20est%20un%20d%C3%A9fi,de%20vie%20des%20personnes%20d%C3%A9favoris%C3%A9es.)  
 
 
-
+## Hackster.io
+[lien du hackster.io](https://www.hackster.io/kennethpadonou06/resilience-to-the-water-resource-problem-3fb877)
 
 
 ## Développeurs
