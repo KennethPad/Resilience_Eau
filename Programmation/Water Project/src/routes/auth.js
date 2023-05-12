@@ -22,7 +22,6 @@ router.post('/login', (req, res) => {
 
         res.redirect('/dashboard/home');
     });
-
 });
 
 router.get('/logout', (req, res) => {
