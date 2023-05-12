@@ -1,0 +1,782 @@
+[
+    {
+        "id": "8fecb5cbba36721b",
+        "type": "tab",
+        "label": "Controleur",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8bcf387ad845734b",
+        "type": "tab",
+        "label": "base de donnee",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b98a8c6612dc1608",
+        "type": "mqtt-broker",
+        "name": "TL136",
+        "broker": "192.168.143.73",
+        "port": "1883",
+        "clientid": "ken",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "100",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "135ab38c281ba342",
+        "type": "mqtt-broker",
+        "name": "WaterQuality",
+        "broker": "192.168.143.73",
+        "port": "1883",
+        "clientid": "kenWaterQ",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "70",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2fe74ae7e96adc19",
+        "type": "mqtt-broker",
+        "name": "Controller",
+        "broker": "192.168.143.73",
+        "port": "1883",
+        "clientid": "control",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "47630fb31548e579",
+        "type": "ui_group",
+        "name": "Niveau d'eau",
+        "tab": "896be1ce4f622bd4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "896be1ce4f622bd4",
+        "type": "ui_tab",
+        "name": "Cuve",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a3f56a4a8abfd278",
+        "type": "mqtt-broker",
+        "name": "M5MQTT",
+        "broker": "192.168.143.72",
+        "port": "1883",
+        "clientid": "k",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1bc8aac44fa1a8eb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ca2643e014fb47f2",
+        "type": "influxdb",
+        "hostname": "127.0.0.4",
+        "port": "8086",
+        "protocol": "http",
+        "database": "sensorData",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "8c3bb04a7bd8eebd",
+        "type": "mqtt in",
+        "z": "8fecb5cbba36721b",
+        "name": "",
+        "topic": "/home/ext/capteurs/TL136",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "b98a8c6612dc1608",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 340,
+        "wires": [
+            [
+                "0ab22ca56a50a4c8",
+                "97769aa86ac69121",
+                "c1dcbdf1d33b4dec"
+            ]
+        ]
+    },
+    {
+        "id": "af1d3fa81c64f864",
+        "type": "mqtt in",
+        "z": "8fecb5cbba36721b",
+        "name": "",
+        "topic": "/home/ext/capteurs/WaterQuality",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "135ab38c281ba342",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 460,
+        "wires": [
+            [
+                "b80425a2c0c2a2d6",
+                "28c9e6cd329fdbc7"
+            ]
+        ]
+    },
+    {
+        "id": "1bc817640c105a91",
+        "type": "mqtt in",
+        "z": "8fecb5cbba36721b",
+        "name": "",
+        "topic": "/home/controller",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "2fe74ae7e96adc19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 2200,
+        "y": 440,
+        "wires": [
+            [
+                "91697e517e21a083"
+            ]
+        ]
+    },
+    {
+        "id": "b6c2fb45d811e0d0",
+        "type": "mqtt out",
+        "z": "8fecb5cbba36721b",
+        "name": "topic_pour_actionneurs",
+        "topic": "/home/controller",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2fe74ae7e96adc19",
+        "x": 1870,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "0ab22ca56a50a4c8",
+        "type": "ui_gauge",
+        "z": "8fecb5cbba36721b",
+        "name": "Dashboard_waterLevel",
+        "group": "47630fb31548e579",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Water_level",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b3a6659be6364112",
+        "type": "join",
+        "z": "8fecb5cbba36721b",
+        "name": "assemblage_donnees_enChaine",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1140,
+        "y": 440,
+        "wires": [
+            [
+                "0ae121c9ceec81da",
+                "bfa66567adf22f02"
+            ]
+        ]
+    },
+    {
+        "id": "97769aa86ac69121",
+        "type": "function",
+        "z": "8fecb5cbba36721b",
+        "name": "traitement _donneesTL136_enChaine",
+        "func": "var nivPlein, nivSuffisant, nivInsuffisant;\nnivPlein={payload: \"eauPlein \"}\nnivSuffisant={payload: \"eauSuffisant \"}\nnivInsuffisant={payload: \"eauInsuffisant \"}\nmsg.topic = \"/home/ext/capteurs/TL136\"\n\nif(msg.payload>80)\n{\n    msg.payload = \"nivPlein\"\n    return msg \n}\nelse if((msg.payload>40) && (msg.payload<80))\n{\n    msg.payload = \"nivSuffisant\"\n    return msg //Nous pouvons utiliser la cuve normalement\n}\nelse\n{\n    msg.payload = \"nivInsuffisant\"\n    return msg \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 360,
+        "wires": [
+            [
+                "b3a6659be6364112"
+            ]
+        ]
+    },
+    {
+        "id": "b80425a2c0c2a2d6",
+        "type": "function",
+        "z": "8fecb5cbba36721b",
+        "name": "traitement _donneeswaterQuality_enChaine",
+        "func": "var nivPlein, nivSuffisant, nivInsuffisant;\nnivPlein={payload: \"eauPlein \"}\nnivSuffisant={payload: \"eauSuffisant \"}\nnivInsuffisant={payload: \"eauInsuffisant \"}\nmsg.topic = \"/home/ext/capteurs/WaterQuality\"\n\nif(msg.payload>800)\n{\n    msg.payload = \"bonne\"\n    return msg //En cas de pluie evacuer vite cette eau\n    \n}\nelse if((msg.payload>400) && (msg.payload<800))\n{\n    msg.payload = \"normal\"\n    return msg //Nous pouvons utiliser la cuve normalement\n    \n}\nelse\n{\n    msg.payload = \"sale\"\n    return msg //La cuve ne peut être utilisé car niveau d'eau trop bas\n    \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 440,
+        "wires": [
+            [
+                "b3a6659be6364112"
+            ]
+        ]
+    },
+    {
+        "id": "ef444c38612e988c",
+        "type": "function",
+        "z": "8fecb5cbba36721b",
+        "name": "association_msgAPI",
+        "func": "\nvar nivPlein, nivSuffisant, nivInsuffisant;\nnivPlein={payload: \"eauPlein \"}\nnivSuffisant={payload: \"eauSuffisant \"}\nnivInsuffisant={payload: \"eauInsuffisant \"}\nmsg.topic = \"/home/ext/api/meteo\"\n\n\n    msg.payload = msg.payload\n    return msg \n    \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 560,
+        "wires": [
+            [
+                "b3a6659be6364112",
+                "5c946aaf708912d1"
+            ]
+        ]
+    },
+    {
+        "id": "6db3b6cf173a7f07",
+        "type": "inject",
+        "z": "8fecb5cbba36721b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "57fc733391fdff6a"
+            ]
+        ]
+    },
+    {
+        "id": "57fc733391fdff6a",
+        "type": "http request",
+        "z": "8fecb5cbba36721b",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "http://134.59.143.111:3000/api/weather/rain",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "x": 270,
+        "y": 560,
+        "wires": [
+            [
+                "ef444c38612e988c"
+            ]
+        ]
+    },
+    {
+        "id": "91697e517e21a083",
+        "type": "debug",
+        "z": "8fecb5cbba36721b",
+        "name": "instructions_actionneurs",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2290,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c1dcbdf1d33b4dec",
+        "type": "function",
+        "z": "8fecb5cbba36721b",
+        "name": "association_topic_TL136",
+        "func": "var nivPlein, nivSuffisant, nivInsuffisant;\nnivPlein={payload: \"eauPlein \"}\nnivSuffisant={payload: \"eauSuffisant \"}\nnivInsuffisant={payload: \"eauInsuffisant \"}\nmsg.topic = \"/home/ext/capteurs/TL136\"\n\n\n    return msg \n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 80,
+        "wires": [
+            [
+                "5c946aaf708912d1"
+            ]
+        ]
+    },
+    {
+        "id": "5c946aaf708912d1",
+        "type": "join",
+        "z": "8fecb5cbba36721b",
+        "name": "assemblage_donnees",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1120,
+        "y": 120,
+        "wires": [
+            [
+                "153660bc31adf1f0"
+            ]
+        ]
+    },
+    {
+        "id": "28c9e6cd329fdbc7",
+        "type": "function",
+        "z": "8fecb5cbba36721b",
+        "name": "association_topic_waterQuality",
+        "func": "var nivPlein, nivSuffisant, nivInsuffisant;\nnivPlein={payload: \"eauPlein \"}\nnivSuffisant={payload: \"eauSuffisant \"}\nnivInsuffisant={payload: \"eauInsuffisant \"}\nmsg.topic = \"/home/ext/capteurs/WaterQuality\"\n\n    return msg ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 240,
+        "wires": [
+            [
+                "5c946aaf708912d1"
+            ]
+        ]
+    },
+    {
+        "id": "153660bc31adf1f0",
+        "type": "mqtt out",
+        "z": "8fecb5cbba36721b",
+        "name": "topic_pour_database",
+        "topic": "/home/data",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "2fe74ae7e96adc19",
+        "x": 1440,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "0ae121c9ceec81da",
+        "type": "function",
+        "z": "8fecb5cbba36721b",
+        "name": "Algorithme_gestion_flux_des_eaux",
+        "func": "//var heureArrosage = msg.payload['/home/ext/api/jardinier/heure']\n\nvar nivEau = msg.payload['/home/ext/capteurs/TL136']\nvar qualiteEau = msg.payload['/home/ext/capteurs/WaterQuality']\nvar meteo = msg.payload['/home/ext/api/meteo']\n\n\nlet mDate = meteo.rainTimes[0].date;\nlet mTemp = meteo.rainTimes[0].temperature;\nlet annoncePluie = meteo.willRain;\n\n\nlet payload = {\n    \"info\": \"nul\",\n    \"vanneECiut\": false,\n    \"vanneECplante\": false,\n    \"VanneStockiut\": false,\n    \"VanneStockPlante\": false,\n    \"VanneStockPiscine\": false,\n    \"VanneStockVidange\": false,\n    \"diminuerArrosage\": false,\n    \"augmenterArrosage\": false\n}\n\n\nif ((mTemp > 18) && (annoncePluie = false)) //&& && (annoncePluie = false)\n{\n    if (qualiteEau == \"bonne\") {\n        if (((nivEau == \"nivSuffisant\") || (nivEau == \"nivPlein\")) && (msg.payload < 80)) {\n            payload.VanneStockiut = true;\n            payload.VanneStockPlante = true;\n            payload.diminuerArrosage = true;\n            payload.info =\"temp>18 willRain=false waterquality=bonne waterLevel=correcte\"\n            msg.payload = payload;\n            return msg\n        }\n        else { //= nivEau insuffisant\n            payload.VanneStockPlante = true;\n            payload.diminuerArrosage = true;\n            payload.info =\"temp>18 willRain=false waterquality=bonne waterLevel=insufisant\"\n            msg.payload = payload;\n            return msg\n        }\n\n    }\n    else if (qualiteEau == \"normal\") {\n        if (((nivEau == \"nivSuffisant\") || (nivEau == \"nivPlein\"))) //&& (msg.payload<80)\n        {\n            payload.VanneStockPlante = true;\n            payload.diminuerArrosage = true;\n            payload.info =\"temp>18 willRain=false waterquality=normal waterLevel=correcte\"\n            msg.payload = payload;\n            return msg\n        }\n        else { //= nivEau insuffisant\n            payload.diminuerArrosage = true;\n            msg.payload = payload;\n            payload.info =\"temp>18 willRain=false waterquality=normal waterLevel=insufisant\"\n            return msg\n        }\n    }\n    else {\n        msg.payload = annoncePluie ;\n        return msg\n    }\n}\n\nelse if ((mTemp > 18) && (annoncePluie = true)) //&& (rain = \"false\")\n{\n\n    if ((qualiteEau == \"bonne\") || (qualiteEau == \"normal\")){\n        if (((nivEau == \"nivSuffisant\") || (nivEau == \"nivPlein\"))) {\n            payload.VanneStockiut = true;\n            payload.VanneStockPlante = true;\n            payload.diminuerArrosage = true;\n            payload.vanneECiut = true;\n            payload.info =\"temp>18 willRain=true waterquality=correcte waterLevel=sufisant\"\n            msg.payload = payload;\n            return msg\n        }\n        else { //= nivEau insuffisant et qualite bonne\n            payload.VanneStockPlante = true;\n            payload.diminuerArrosage = true;\n            payload.info =\"temp>18 willRain=true waterquality=correcte waterLevel=faible\"\n            msg.payload = payload;\n            return msg\n        }\n    }\n    else {\n        //= eau sale peu importe le niveau\n            payload.VanneStockVidange = true;\n            payload.info =\"temp>18 willRain=true waterquality=sale waterLevel=inconnu\"\n            msg.payload = payload;\n            return msg\n        \n    }\n\n}\nelse if (mTemp < 18) //&& (rain = \"false\")\n{\n\n    if ((qualiteEau == \"bonne\") || (qualiteEau == \"normal\")){\n        if (((nivEau == \"nivSuffisant\") || (nivEau == \"nivPlein\"))) {\n            payload.VanneStockiut = true;\n            payload.VanneStockPlante = true;\n            payload.diminuerArrosage = true;\n            payload.vanneECiut = true;\n            payload.info =\"temp<18 willRain=inconnu waterquality=correcte waterLevel=sufisant\"\n            msg.payload = payload;\n            return msg\n        }\n        else { //= nivEau insuffisant et qualite bonne\n            payload.VanneStockPlante = true;\n            payload.diminuerArrosage = true;\n            payload.info =\"temp<18 willRain=inconnu waterquality=correcte waterLevel=faible\"\n            msg.payload = payload;\n            return msg\n        }\n    }\n    else {\n        //= eau sale peu importe le niveau\n            payload.VanneStockVidange = true;\n            payload.info =\"temp<18 willRain=inconnu waterquality=sale waterLevel=inconnu\"\n            msg.payload = payload;\n            return msg\n        \n    }\n\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 440,
+        "wires": [
+            [
+                "b6c2fb45d811e0d0",
+                "4d857cae5db04b30"
+            ]
+        ]
+    },
+    {
+        "id": "bfa66567adf22f02",
+        "type": "debug",
+        "z": "8fecb5cbba36721b",
+        "name": "reunion_des_donnees",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4d857cae5db04b30",
+        "type": "debug",
+        "z": "8fecb5cbba36721b",
+        "name": "instructions_actionneurs",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1790,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "0ff9a9f77b37ec15",
+        "type": "change",
+        "z": "8bcf387ad845734b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t    \"temperature\" : msg.payload.temperature,\t    \"willRain\" : msg.payload.willRain,\t    \"waterQuality\" : msg.payload.waterQuality,\t    \"waterLevel\" : msg.payload.waterLevel\t}\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 220,
+        "wires": [
+            [
+                "218bee22c4a0905d",
+                "34988486765115dc"
+            ]
+        ]
+    },
+    {
+        "id": "93c46edf3d5b6540",
+        "type": "influxdb out",
+        "z": "8bcf387ad845734b",
+        "influxdb": "ca2643e014fb47f2",
+        "name": "",
+        "measurement": "influxdataTest",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1120,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0d740a607fb7fc3e",
+        "type": "mqtt in",
+        "z": "8bcf387ad845734b",
+        "name": "",
+        "topic": "/home/data",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "2fe74ae7e96adc19",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "752ff4db692f3134"
+            ]
+        ]
+    },
+    {
+        "id": "752ff4db692f3134",
+        "type": "function",
+        "z": "8bcf387ad845734b",
+        "name": "organisation_Donnees_Recu",
+        "func": "\nlet payload = {\n    \"temperature\": msg.payload['/home/ext/api/meteo'].rainTimes[0].temperature.toString(),\n    \"willRain\": msg.payload['/home/ext/api/meteo'].willRain,\n    \"waterQuality\": msg.payload['/home/ext/capteurs/WaterQuality'].toString(),\n    \"waterLevel\": msg.payload['/home/ext/capteurs/TL136'].toString()\n    //\"drought\": msg.payload['/home/ext/api/meteo'].willRain,\n    //\"rainToday\": msg.payload['/home/ext/api/meteo'].willRain,\n}\nmsg.payload = payload;\nreturn msg;\n\n\n//var nivEau = msg.payload['/home/ext/capteurs/TL136']\n//var qualiteEau = msg.payload['/home/ext/capteurs/WaterQuality']\n//var heureArrosage = msg.payload['/home/ext/api/jardinier/heure']\n//var meteo = msg.payload['/home/ext/api/meteo']\n\n/*\nlet mDate = meteo.rainTimes[0].date;\nlet mTemp = meteo.rainTimes[0].temperature;\n//let annoncePluie = meteo.willRain;\n\nlet temperature = msg.payload['/home/ext/api/meteo'].rainTimes[0].temperature\nlet annoncePluie = msg.payload['/home/ext/api/meteo'].willRain\nlet qualiteEau = msg.payload['/home/ext/capteurs/WaterQuality']\nlet niveauEau = msg.payload['/home/ext/capteurs/TL136']\n*/\n\n\n/*{\n    \"temperature\" : msg.payload['/home/ext/api/meteo'].rainTimes[0].temperature,\n    \"annoncePluie\" : msg.payload['/home/ext/api/meteo'].willRain,\n    \"qualiteEau\" : msg.payload['/home/ext/capteurs/WaterQuality'],\n    \"niveauEau\" : msg.payload['/home/ext/capteurs/TL136']\n    \n\n}\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 220,
+        "wires": [
+            [
+                "0ff9a9f77b37ec15"
+            ]
+        ]
+    },
+    {
+        "id": "34988486765115dc",
+        "type": "influxdb out",
+        "z": "8bcf387ad845734b",
+        "influxdb": "ca2643e014fb47f2",
+        "name": "",
+        "measurement": "influxdata",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1130,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "218bee22c4a0905d",
+        "type": "debug",
+        "z": "8bcf387ad845734b",
+        "name": "donnees_envoyer_bd",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 320,
+        "wires": []
+    }
+]
