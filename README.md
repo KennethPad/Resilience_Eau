@@ -129,15 +129,48 @@ upstream influx {
 
 
 #### Node.JS
-> Node.js est un environnement d'exécution open-source, construit sur le moteur JavaScript V8 de Google. Il permet aux développeurs d'exécuter du code JavaScript côté serveur, plutôt que simplement côté client dans un navigateur web.
-<br>
+> Node.js® est un environnement d’exécution JavaScript construit sur le moteur JavaScript V8 de Chrome. Ce n'est pas un serveur, ce n'est pas un framework, c'est un environnement d’exécution JavaScript.
+<br/>
 
-- Installer Node.JS  cliquer sur ce [lien](https://nodejs.org/en/download)
+##### Comment installer Node.JS ? (sur Windows)
+
+> Pour commencer nous devons nous rendre sur [https://nodejs.org/fr](https://nodejs.org/fr) afin de télécharger la version recommandée pour la plupart des utilisateurs (LTS). <br/>
+On exécute le fichier node-v{version lts}.msi et nous allons suivre les étapes d'installation en cliquant sur "Next". <br/>
+Dès que l'installation de Node.JS est terminée, l'environnement d’exécution JavaScript est démarré !  
+
+<br/>
+
+
+》Tableau de bord (Dashboard)
+> Ce tableau de bord permet l'affichage et gestion des données. Il est relié à la base de donnée InfluxDB.  
+
+》API Rest
+> L'API Rest permet d'envoyer des données concernant des prévisions métérologiques.  
+> Elle possède actuellement 2 endpoints qui permet de récupérer les périodes de pluie prévues pour les 3 prochains jours et les températures prévues pour les prochaines 24 heures.  
+
+》Démarrer le Dashboard & l'API  
+> Tout d'abord, il nous faut installer les packages se trouvant dans le package.json, nous allons exécuter cette commande :  
+```js
+npm install
+```
+> Nous voulons ensuite démarrer le projet, nous allons exécuter cette commande :
+```js
+npm run start
+```
+
+> Dès que le projet est démarré, un message apparaît : "[Water Project] Listen on port 3000".
+> Ce message permet de dire que le projet écoute sur le port 3000 du localhost qui est accessible à cette adresse : [http://localhost:3000](http://localhost:3000).  
+
+Un utilisateur "Test" est présent dans la liste des utilisateurs pour tester le Dashboard.
+Identifiant : Test  
+Mot de passe : test  
+
+
 
 
 
 #### Explication des équipements et de la technologies
->Afin de mener à bien le projet de la résilience de l'eau, nous nous sommes renseigner sur les différentes manières de stocker l'eau, qui sont les suivantes : 
+>Afin de mener à bien le projet de la résilience de l'eau, nous nous sommes renseigner sur les différentes manières de stocker l'eau, qui sont les suivantes :  
 - barrages
 - réservoirs
 - cuves
