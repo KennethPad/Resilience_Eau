@@ -1,0 +1,31 @@
+<html lang="fr">
+
+<%- include('../partials/head', { title: "Water Project - Arrosage" }) %>
+
+<body>
+    <div class="dashboard">
+        <%- include('../partials/sidebar') %>
+
+            <div class="dashboard-main">
+                <div class="dashboard-top">
+                    <h1 class="dashboard-title">Programmation d'arrosage</h1>
+                    <div class="connectedUser">
+                        <i class="fa fa-user"></i>
+                        <span>Utilisateur : <%= connectedUser.username %></span>
+                    </div>
+                </div>
+                <div class="dashboard-content">
+                    <form class="watering-form" method="POST" action="/dashboard/schedule">
+                        <div>
+                            <label for="time">Heure d'arrosage :</label>
+                            <input type="time" id="time" name="time" min="17:00" max="22:00" required>
+                        </div>
+                        
+                        <button type="submit">Programmer</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
