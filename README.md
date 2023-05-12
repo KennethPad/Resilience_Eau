@@ -214,7 +214,8 @@ Pour permettre l'accès à notre raspberry Pi depuis l'exterieur, nous avons cho
 Le tableau de bord est réalisé grâce à toutes les données stocker en continu dans la base de donnée. A l'aide de Node.JS et précisement chart.JS, nous avons obtenu un affichage dynamique et en temps réel.  
 Via le javascript, html et css, nous avons eu la possibilité de mettre en place une page "programmer heure" permettant au jardinier de programmer les heures d'arrosage, pour que l'action se réalise automatiqument.  
 
-
+<br/>
+<br/>
 
 #### Sources
 
