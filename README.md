@@ -95,7 +95,8 @@ Présentation d'un select * :
 #### Nginx
 > Nginx (prononcé "Engine-X") est un serveur web open source, léger et performant. Il est principalement utilisé pour servir des pages web statiques ou dynamiques et pour effectuer des opérations de proxy inverse, de mise en cache et de répartition de charge sur des sites web à forte demande.
 <br>
-- Installer Nginx: 
+
+- Installer Nginx:  
 ```
 sudo apt install nginx
 ```
@@ -125,7 +126,8 @@ upstream influx {
 #### Node.JS
 > Def de Node.JS
 <br>
-##### Pré-requis :
+
+##### Pré-requis :  
 s'assurer que votre raspberry Pi 3/4 est mis à jours.
 ```
 sudo apt update
