@@ -27,9 +27,10 @@ Règle principale stockage des eaux :
 
 ### Installation 
 
-#### IoTStack contenant : Docker, Node-Red, influxdb, mosquitto (mqtt)
+#### IoTStack contenant : Docker, Node-Red, influxdb, mosquitto (mqtt)  
 > IoTstack est une plateforme open source pour la gestion de projets IoT basée sur Docker. Elle fournit un ensemble d'outils préconfigurés pour permettre aux développeurs et aux ingénieurs de déployer rapidement des projets IoT à grande échelle. IoTstack utilise Docker pour isoler chaque service et les exécuter de manière indépendante sur une machine hôte. Cela permet de simplifier la gestion des différents composants d'un projet IoT et de faciliter la mise à l'échelle.
 </br>  
+
 ##### Pré-requis :  
 s'assurer que votre raspberry Pi 3/4 est mis à jours.
 ```
