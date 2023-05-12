@@ -105,6 +105,9 @@ Présentation d'un select * :
 <br/>
 <br/>
 
+
+
+
 #### Nginx
 > Nginx (prononcé "Engine-X") est un serveur web open source, léger et performant. Il est principalement utilisé pour servir des pages web statiques ou dynamiques et pour effectuer des opérations de proxy inverse, de mise en cache et de répartition de charge sur des sites web à forte demande.
 <br>
@@ -198,6 +201,29 @@ En examinant ces diverses approches, nous avons opter pour l'approche de la cuve
 ###### Capteurs/Actionneurs  
 Afin de communiquer facilement avec le système intilligent, nous avons fais le choix d'utiliser un broker MQTT étudier en classe et facile d'implémentation, de plus des données peuvent être envoyé par les capteurs de façon continu sans avoir le besoin de faire des requete http.  
 Les actionneurs devraient eux s'abonner à un topic du broker afin de recevoir des ordres du système intelligent.  
+
+####### Mosquitto commande
+> Nginx (prononcé "Engine-X") est un serveur web open source, léger et performant. Il est principalement utilisé pour servir des pages web statiques ou dynamiques et pour effectuer des opérations de proxy inverse, de mise en cache et de répartition de charge sur des sites web à forte demande.
+
+- commande pour publier à un topic:  
+```
+mosquitto_pub -h 192.168.143.73 -t /home/ext/capteurs/TL136 -m "100"
+```
+`192.168.143.73` - est l'ip du serveur, il peut être local en le remplacer par "localhost" 
+`-t` - pour renseigner le topic.  
+`/home/ext/capteurs/TL136` - est le topic.  
+`100` - est la valeur envoyée.  
+
+- commande pour écouter un topic:  
+```
+mosquitto_sub -h 192.168.143.73 -t /home/controller -v
+```
+`192.168.143.73` - est l'ip du serveur, il peut être local en le remplacer par "localhost"  
+`-t` - pour renseigner le topic.  
+`/home/controller` - est le topic d'écoute.  
+`-v` - option utilisée pour afficher les messages en mode verbeux.  
+
+
 
 ###### Système intelligent  
 Afin de gérer les transactions et stocker les données, nous avons opter pour l'utilisation de Node-Red qui peut simuler une sorte de système intelligent grâce à des noeuds fonctions.  
