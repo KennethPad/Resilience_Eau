@@ -29,15 +29,15 @@ Règle principale stockage des eaux :
 
 #### IoTStack contenant : Docker, Node-Red, influxdb, mosquitto (mqtt)
 > IoTstack est une plateforme open source pour la gestion de projets IoT basée sur Docker. Elle fournit un ensemble d'outils préconfigurés pour permettre aux développeurs et aux ingénieurs de déployer rapidement des projets IoT à grande échelle. IoTstack utilise Docker pour isoler chaque service et les exécuter de manière indépendante sur une machine hôte. Cela permet de simplifier la gestion des différents composants d'un projet IoT et de faciliter la mise à l'échelle.
-</br>
-##### Pré-requis :
+</br>  
+##### Pré-requis :  
 s'assurer que votre raspberry Pi 3/4 est mis à jours.
 ```
 sudo apt update
 sudo apt upgrade
-```
-##### Les étapes d'installations :
-- Télécharger IoTStack à l'aide de la commande suivante et redémarrer une fois le téléchargement terminé : 
+```  
+##### Les étapes d'installations :  
+- Télécharger IoTStack à l'aide de la commande suivante et redémarrer une fois le téléchargement terminé :  
 ```
 curl -fsSL https://raw.githubusercontent.com/SensorsIot/IOTstack/master/install.sh | bash
 sudo shutdown -r now
@@ -47,7 +47,7 @@ sudo shutdown -r now
 cd IOTstack/
 sudo ./menu.sh
 ```
-- Vous aurez ensuite cette interface :
+- Vous aurez ensuite cette interface :  
 ![alt iotTack](https://ddrei.net/media/2021/02/IOTstack_mariadb_nc.png)
 
 - Dans ce menu naviguez avec les flèches haut et bas puis espace pour sélectionner. Enter construira le fichier docker-compose.yml. Assurez-vous de sélectionner les composants suivants : 
