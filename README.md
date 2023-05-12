@@ -1,4 +1,5 @@
 # Resilience Eau
+## Description
 > Ce projet permet l'économie d'eau à travers 2 facteurs qui sont la récupération des eaux de pluie et la réutilisation des eaux usées venant des sanitaires, et son exploitation.  
 > Pour réaliser ce projet, il est importer de se renseigner sur les enjeux, et préservation de l'eau.
 Comme par exemple, connaitre cette règle de stockage : "Le stockage de l'eau doit être fait dans une cuve hors-sol ou enterrée. Aucun produit anti-gel ne doit être appliqué dans la cuve de stockage."  
