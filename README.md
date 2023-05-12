@@ -228,9 +228,14 @@ Via le javascript, html et css, nous avons eu la possibilité de mettre en place
 [Les enjeux liés à l'eau : L'environnement en Nord-Pas-de-Calais](https://www.hauts-de-france.developpement-durable.gouv.fr/?-Les-enjeux-lies-a-l-eau-)  
 [Les enjeux liés à l'eau : AFD](https://www.afd.fr/fr/actualites/dossier-eau-un-enjeu-mondial#:~:text=L'eau%20est%20un%20d%C3%A9fi,de%20vie%20des%20personnes%20d%C3%A9favoris%C3%A9es.)  
 
+<br/>
+<br/>
 
 ## Hackster.io
 [lien du hackster.io](https://www.hackster.io/kennethpadonou06/resilience-to-the-water-resource-problem-3fb877)
+
+<br/>
+<br/>
 
 
 ## Développeurs
