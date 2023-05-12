@@ -6,7 +6,7 @@ const router = Router();
  * /weather/rain:
  *   get:
  *     summary: Récupère les informations de prévision météorologique pour Valbonne à partir de l'API OpenWeatherMap.
- *     description: Renvoie les informations sur les périodes de pluie prévues pour les prochaines 24 heures.
+ *     description: Renvoie les informations sur les périodes de pluie prévues pour les 3 prochains jours.
  *     responses:
  *       200:
  *         description: Succès de la requête. Les informations sur les périodes de pluie prévues sont renvoyées.
