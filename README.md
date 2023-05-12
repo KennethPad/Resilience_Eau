@@ -202,7 +202,7 @@ En examinant ces diverses approches, nous avons opter pour l'approche de la cuve
 Afin de communiquer facilement avec le système intilligent, nous avons fais le choix d'utiliser un broker MQTT étudier en classe et facile d'implémentation, de plus des données peuvent être envoyé par les capteurs de façon continu sans avoir le besoin de faire des requete http.  
 Les actionneurs devraient eux s'abonner à un topic du broker afin de recevoir des ordres du système intelligent.  
 
-####### Mosquitto commande
+》Mosquitto commande
 > Nginx (prononcé "Engine-X") est un serveur web open source, léger et performant. Il est principalement utilisé pour servir des pages web statiques ou dynamiques et pour effectuer des opérations de proxy inverse, de mise en cache et de répartition de charge sur des sites web à forte demande.
 
 - commande pour publier à un topic:  
@@ -223,7 +223,7 @@ mosquitto_sub -h 192.168.143.73 -t /home/controller -v
 `/home/controller` - est le topic d'écoute.  
 `-v` - option utilisée pour afficher les messages en mode verbeux.  
 
-
+<br/>
 
 ###### Système intelligent  
 Afin de gérer les transactions et stocker les données, nous avons opter pour l'utilisation de Node-Red qui peut simuler une sorte de système intelligent grâce à des noeuds fonctions.  
